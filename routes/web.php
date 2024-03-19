@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\JogosController;
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/home', function () {
@@ -42,9 +43,9 @@ use Illuminate\Support\Facades\Route;
 //realizando uma condição para recebimentos de numeros e strings
 
 
-Route::get('/jogos', function() {
-    return view('jogos');
-});
+// Route::get('/jogos', function() {
+//     return view('jogos');
+// });
 
 Route::get('/home', function() {
     return view('welcome');
@@ -60,3 +61,10 @@ Route::fallback(function(){
     return "Erro ao localizar a rota!";
     //posso retornar uma view como tratativa de erro.
 });
+
+
+
+//AULA 04 
+
+
+Route::get('/jogos', [JogosController::class, 'index']);

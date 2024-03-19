@@ -9,6 +9,6 @@
 <body>
     <!-- <h1>testando routes com views</h1>
     </p> -->
-    <a href="{{ route('home-index') }}">Clique aqui</a>
+    <a href="{{ route('home-index') }}">Clique aqui - {{ $nome }}</a>
 </body>
 </html>

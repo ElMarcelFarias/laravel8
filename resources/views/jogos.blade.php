@@ -7,7 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>testando routes com views</h1>
-    <p>{{ $name }}</p>
+    <!-- <h1>testando routes com views</h1>
+    </p> -->
+    <a href="{{ route('home-index') }}">Clique aqui</a>
 </body>
 </html>

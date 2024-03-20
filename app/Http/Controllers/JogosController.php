@@ -15,4 +15,14 @@ class JogosController extends Controller {
         //helper do laravel que mostra uma variavel ou texto
     }
 
+    public function create() {
+        //retorna a view para o formulario de criacao de novo jogo.
+        return view('jogos.create');
+    }
+
+    public function store(Request $request) {
+        Jogo::create($request->all());
+        return redirect()->route('jogos-index');
+    }
+
 }

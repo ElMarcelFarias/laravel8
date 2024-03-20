@@ -10,7 +10,7 @@ class JogosController extends Controller {
 
         $nome = "Marcel";
 
-        return view('jogos', ['nome' => $nome]);
+        return view('jogos.index', ['nome' => $nome]);
         //helper do laravel que mostra uma variavel ou texto
     }
 
